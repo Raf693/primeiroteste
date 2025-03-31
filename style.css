@@ -10,8 +10,13 @@ h1{
     background-color: aliceblue;
     flex: 1; /* Faz o texto ocupar o espaço restante */
     overflow-wrap: break-word; /* Evita que palavras longas quebrem o layout */
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: justify;
+}
+
+.imagem1{
+    padding: 10px;
+    border-radius: 15px;
 }
 .open-btn{
     align-items: center;
@@ -24,7 +29,7 @@ h1{
     margin-left: 10px;
 }
 
-.botao-menu {
+.menu {
     top: 0;
     height: 100vh;
     width: 0;
@@ -38,9 +43,21 @@ h1{
     z-index: 1000;
     position: fixed;
 }
-.Menu{
+.h2menu{
     margin-left: 15px;
+
 }
 .close-btn{
     margin-left: 190px;
+}
+.card1{
+    background-color: aliceblue;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.textocard1{
+    margin: 15px;
 }
