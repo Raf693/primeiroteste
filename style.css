@@ -4,19 +4,26 @@ h1{
 
 .texto1{
     align-items: center;
-    display: flex;
-    margin: 20px;
+    display: column;
+    margin: auto;
+    margin-bottom: 45px;
     padding: 15px;
     background-color: aliceblue;
     flex: 1; /* Faz o texto ocupar o espaço restante */
     overflow-wrap: break-word; /* Evita que palavras longas quebrem o layout */
     border-radius: 15px;
     text-align: justify;
+    position: relative;
 }
 
 .imagem1{
-    padding: 10px;
-    border-radius: 15px;
+    padding: 10p;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    width: 100%;
+    max-width: 800%;
+    aspect-ratio: 7/2;
 }
 .open-btn{
     align-items: center;
@@ -42,6 +49,19 @@ h1{
     padding-top: 20px;
     z-index: 1000;
     position: fixed;
+    flex-direction: column;
+}
+
+.videocad1{
+    position: relative;
+    width: 100%;
+    max-width: 800%;
+    aspect-ratio: 16/9;
+}
+.iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 .h2menu{
     margin-left: 15px;
@@ -51,11 +71,19 @@ h1{
     margin-left: 190px;
 }
 .card1{
+    text-align: center;
+    align-self: start;
     background-color: aliceblue;
     display: flex;
-    margin: 20px;
+    margin: auto;
     padding: 20px;
     border-radius: 15px;
+    max-width: 800px;
+    height: auto;
+    min-height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
 }
 
 .textocard1{
