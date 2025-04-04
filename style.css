@@ -143,6 +143,9 @@ h1{
 
 h3{
     margin-left: 20px;
+    background-color: rgb(78, 220, 121);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .paragrafo1{
@@ -150,5 +153,18 @@ h3{
 }
 
 .paragrafo2{
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px;
+
+    &.imagemp2{ 
+        width: 100%;
+        max-width: 300px ;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    &.p2{
+        flex: 1;
+    }
 }
