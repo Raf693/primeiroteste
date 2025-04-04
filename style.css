@@ -134,11 +134,7 @@ h1{
 }
 
 .informações-menu{
-  
-     & Referencias-bibiograficas{
-        margin: 40px;
-}
-    
+
 }
 
 h3{
@@ -153,18 +149,13 @@ h3{
 }
 
 .paragrafo2{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
+     margin: 20px;
 
-    &.imagemp2{ 
+     & .imagemp2{
+        margin-top: 30px;
+        position: relative;
         width: 100%;
-        max-width: 300px ;
-        margin-bottom: 10px;
-        display: flex;
-    }
-
-    &.p2{
-        flex: 1;
-    }
+        max-width: 800%;
+        aspect-ratio: 16/9;
+     }
 }
