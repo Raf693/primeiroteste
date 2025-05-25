@@ -1,182 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>calcular média</title>
 </head>
 <body>
 
-  <h1>desmatamento na Amazônia</h1>
-  <p class="texto1">
-     
-Os alertas de desmatamento na Amazônia Legal atingiram o menor índice para o mês de fevereiro, de acordo com dados divulgados 
-pelo Instituto Nacional de Pesquisas Espaciais (Inpe) . Foram registrados 80,95 km² de áreas desmatadas no mês em 2025, uma queda 
-de 64,26% em relação ao mesmo período do ano passado, quando foram detectados 226,51 km² de desmatamento.
+   <h1>calcular média de consumo de combustivel</h1>
 
-O pior ano foi 2023, quando houve alerta de desmatamento para uma área de 321,97 km² no período. Os alertas foram 
-feitos pelo Sistema de Detecção de Desmatamento em Tempo Real (Deter), desenvolvido como um sistema de alerta para 
-dar suporte à fiscalização e controle de desmatamento e da degradação florestal realizadas pelo Instituto Brasileiro do Meio Ambiente 
-e dos Recursos Naturais Renováveis (Ibama) e demais órgãos ligados à temática.
+    <div id="calculadora">
 
-<img class="imagentexto" src="https://www.gov.br/secom/pt-br/assuntos/noticias/2025/03/desmatamento-na-amazonia-atinge-menor-indice-da-serie-historica-
-para-fevereiro/12.03.2025INPEINFOGraficodeDesmatamento20251.png/@@images/d16e4d44-7976-4b4a-9e92-9db07e4db01f.png" alt="">
+   <label for="distancia">distância percorrida (km):</label>
+   <input type="number" id="distancia" step="1"><br><br>
 
-<ul>
-  <li>
-    noticia completa: <a href="https://www.gov.br/secom/pt-br/assuntos/noticias/2025/03/desmatamento-na-amazonia-atinge-menor-indice-da-serie-historica-para-fevereiro">
-     https://www.gov.br/secom/pt-br/assuntos/noticias/2025/03/desmatamento-na-amazonia-atinge-menor-indice-da-serie-historica-para-fevereiro
-    </a>
-  </li>
-</ul>
-  </p>
- <div class="imagemfundo">
-  <h2 class="titulocard">algumas ações do governo federal para proteger a Amazônia</h2>
+   <label for="combustivel">combustivel consumido (litros):</label>
+   <input type="number" id="combustivel" step="1"><br><br>
 
-  <div class="card1">
+   <button onclick="calcularconsumo()">calcular </button>
 
-     <h2>Operação Verde Brasil 2</h2>
+    <p id="resultado"></p>
 
-    <iframe class="videocard1" src="https://www.youtube.com/embed/UT26ff2EooU?si=H-IIJO6_eZjqE76_" title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p class="textocard1">
-      A Operação Verde Brasil 2, na Amazônia Legal, teve início em maio deste ano com ações preventivas e repressivas contra delitos ambientais e 
-      combate a focos de incêndio na região. A Operação já está em sua segunda fase. A primeira foi realizada 
-      no ano passado.
+    </div>
+ 
+    <h1>calcular temperatura</h1>
 
-      As ações ocorrem em faixas de fronteira, terras indígenas, unidades federais de conservação ambiental e outras áreas federais da Amazônia Legal.
-       É coordenada pela Vice-Presidência da República e conta com o apoio de instituições de controle 
-      ambiental e segurança pública. São elas: Polícias Federal e Rodoviária Federal; Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (Ibama);
-       Instituto Chico Mendes de Conservação da Biodiversidade (ICMbio); Força Nacional 
-      de Segurança Pública; Agência Brasileira de Inteligência (Abin); e Centro Gestor e Operacional do Sistema de Proteção da Amazônia (Censipam).
-       <ul class="fonte1">
-        <li>
-          data da Operação 11 de mai. de 2020 – 30 de abr. de 2021
-          <a href="https://g.co/kgs/4XLW6Ft">https://g.co/kgs/4XLW6Ft</a> 
-        </li>
-        <li> 
-          <p>
-          <a href="https://www.gov.br/casacivil/pt-br/assuntos/noticias/2020/novembro/conheca-algumas-as-acoes-do-governo-federal-para-cuidar-da-amazonia">
-            https://www.gov.br/casacivil/pt-br/assuntos/noticias/2020/novembro/conheca-algumas-as-acoes-do-governo-federal-para-cuidar-da-amazonia</a>
-          </p>
-        </li>
-       </ul>
-    </p>
-  </div>
-  
-  <div class="card2">
-             <h2>ICMBio, Funai e Polícia Federal combatem garimpo ilegal e caça no Amazonas</h2>
+    <div id="calculadora2">
     
-        <img class="imagemcard2" src="https://agenciagov.ebc.com.br/noticias/202502/instituto-chico-mendes-funai-e-policia-federal-combatem-garimpo-ilegal-e-caca-no-
-amazonas/@@images/8d8570f4-721f-40a7-87f2-1198f90a1a96.jpeg" alt="imagemc2">
-    <p class="textocard2">
-      O Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), em conjunto com a Fundação Nacional dos Povos Indígenas (Funai) e a Polícia Federal (PF),
-       realizou a operação Nha-Tó-ió-ió (Terra Viva) nos rios Solimões e Japurá, no Amazonas, com o objetivo de combater o garimpo ilegal no Estado, na região da 
-       tríplice fronteira Brasil-Peru-Colômbia. A operação, realizada entre os dias 8 e 12 de dezembro de 2024, resultou na destruição de 12 dragas de garimpo, três
-        rebocadores, uma balsa de combustível e quatro embarcações.
-    </p>
-    <ul class="fonte2">
-      <li>
-        noticia completa:
-        <a href="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/instituto-chico-mendes-funai-e-policia-federal-combatem-garimpo-ilegal-e-caca-no-amazonas">
-          https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/instituto-chico-mendes-funai-e-policia-federal-combatem-garimpo-ilegal-e-caca-no-amazonas</a> 
-      </li>
-  </div>
-</div>
-  <div class="card3">
-                 <h2>Governo libera R$514 milhões para combater queimadas na Amazônia</h2>
-    <img class="imagemc3" src="https://www.gov.br/secom/pt-br/assuntos/noticias/2024/09/governo-federal-destina-mais-de-r-514-milhoes-para-combate-a-incendios-e-seca-na-amazonia/17092024_queimadas_amazonia
-.jpg/@@images/a3a103fc-c91a-4317-886b-85a354ee8ae9.jpeg" alt="">
+    <label for="celsius">temperatura em celsius (°C):</label>  
+    <input type="number" id="celsius">
+
+    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
+
+    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
     
-    <p class="textocard3">
-      Governo Federal vai destinar R$ 514.474.666,00 (quinhentos e quatorze milhões, quatrocentos e setenta e quatro mil, seiscentos e sessenta e seis reais) para ações emergenciais de combate aos efeitos dos
-      incêndios e à situação de grave estiagem que atinge grande parte da Região Norte e a Amazônia Legal. O presidente Luiz Inácio Lula da Silva vai assinar medida provisória que abre crédito extraordinário 
-      a diversos ministérios e autarquias públicas que darão continuidade ao trabalho de investigação de incêndios criminosos, de combate aos focos das queimadas - garantindo toda a infraestrutura necessária 
-      e de atendimento à população afetada. 
-
-      <ul class="fonte3">
-        <li>
-          noticia completa:
-          <a href="https://www.gov.br/secom/pt-br/assuntos/noticias/2024/09/governo-federal-destina-mais-de-r-514-milhoes-para-combate-a-incendios-e-seca-na-amazonia">
-            https://www.gov.br/secom/pt-br/assuntos/noticias/2024/09/governo-federal-destina-mais-de-r-514-milhoes-para-combate-a-incendios-e-seca-na-amazonia</a> 
-        </li>
-    </p>
-  </div>
-
-
-  <h3>Biodiversidade Amazônica</h3>
-  <p class="paragrafo1">
-    A Amazônia compreende um dos maiores e mais diversificados biomas do planeta, contendo uma rica biodiversidade de 
-    fauna e flora com alto grau de endemismo. Em uma área de quase cinco milhões km², ela integra oito estados brasileiros e 
-    133 unidades de conservação federal.
-
-    O Centro Nacional de Pesquisa e Conservação da Biodiversidade Amazônica - CEPAM é um Centro especializado do Instituto Chico 
-    Mendes de Conservação da Biodiversidade (ICMBio) criado em 2006 como um dos primeiros Centros Biomáticos do Instituto. Neste 
-    grandioso bioma, o Centro trabalha na geração e gestão de informações que subsidiam a implantação de medidas de conservação, 
-    monitoramento e aprimoramento das políticas ambientais voltadas à conservação da biodiversidade amazônica, com foco no seu ambiente aquático.
-    
-    Nas atividades executadas pelo CEPAM, destacam-se o monitoramento da biodiversidade aquática amazônica, por meio da 
-    estruturação e implementação do  subprograma Aquático Continental do Programa MONITORA nas UCs federais,  a execução da Avaliação
-     do Risco de Extinção das espécies de peixes continentais amazônicas, a atuação em Planos de Ação Nacional para a recuperação de 
-     espécies ameaçadas no bioma, participação em projetos de pesquisas, análise de solicitações de pesquisa do SISBIO (Sistema de 
-     Autorização e Informação em Biodiversidade) para peixes, invertebrados aquáticos e vegetais hidróbios amazônicos e a realização 
-     de ações de Educação Ambiental.
-    
-    O CEPAM encontra-se localizado no município de Manaus, estado do Amazonas. Sua sede foi construída no campus da Universidade 
-    Federal do Amazonas – UFAM, possibilitando uma maior interação com o meio acadêmico no desenvolvimento de projetos de pesquisa 
-    e conservação da biodiversidade amazônica.
-  </p>
-
- <h3>paises que fazem parte da Amazônia </h3>
-
-<p class="paragrafo2">
-  Amazônia(pt-BR) ou Amazónia(pt-PT?)[nota 1] é uma floresta latifoliada úmida que cobre a maior parte da Bacia Amazônica na América 
-  do Sul. Esta bacia (Marañon, Solimões, Amazonas) abrange 7 milhões de quilômetros quadrados distribuído por nove países: Brasil,
-   Bolívia, Peru, Colômbia, Equador, Venezuela, Guiana, Guiana Francesa (departamento ultramarino da França) e Suriname (atual Amazônia Natural)
-   ,[1][2] dos quais 5 milhões e meio de quilômetros quadrados são cobertos pela esta floresta tropical.
-
-Esta região inclui territórios pertencentes a nove nações. A maioria das florestas está contida dentro
- do Brasil, aproximadamente 60% da floresta, seguida pelo Peru com 16% e com partes menores na Colômbia, Equador, Bolívia, Venezuela, Guiana, 
- Suriname e, a Guiana Francesa.[1][2] Estados ou departamentos de quatro nações vizinhas do Brasil têm o nome de Amazonas por isso (departamento 
- colombiano Amazonas, estado venezuelano Amazonas). A Amazônia representa mais da metade das florestas tropicais remanescentes no planeta 
- e compreende a maior biodiversidade em uma floresta tropical no mundo. É um dos seis grandes biomas brasileiros.[nota 2]
-
-No Brasil, por efeitos de governo e economia, a Amazônia é delimitada por uma área chamada "Amazônia Legal" definida a partir da criação 
-da Superintendência do Desenvolvimento da Amazônia (SUDAM), em 1966. É chamado também de Amazônia o bioma que, no Brasil, ocupa 49,29% do 
-território e abrange três das cinco divisões regionais do país (Norte, Nordeste e Centro-Oeste), sendo o maior bioma terrestre do país.
-
-Uma área de seis milhões de hectares no centro de sua bacia hidrográfica, incluindo o Parque Nacional do Jaú, foi considerada pela 
-UNESCO, em 2000 (com extensão em 2003), Patrimônio da Humanidade. A Amazônia também foi pré-selecionada em 2008 como candidata a uma 
-das sete maravilhas naturais do mundo, sendo classificada em primeiro lugar no Grupo E, a categoria para as florestas, parques nacionais
- e reservas naturais, em fevereiro de 2009.[3]
-
- <img class="imagemp2" src="https://imazon.org.br/wp-content/uploads/2020/12/vista-da-amazonia_133548-161.jpg" alt="2">
-</p>
-
-  <div id="botaomenu" class="menu">
-    <button class="close-btn" onclick="fecharMenu()">✖</button>
-    <h2 class="h2menu">Menu Lateral</h2>
-    <p>📌 Informações úteis:</p>
-    <ul class="informações-menu">
-      <li> </li>
-      <li>Texto de exemplo...</li>
-      <li class="Referencias-bibiograficas">
-        <h5>Referencias bibiograficas</h5>
-    <p>
-      <a href="https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/biodiversidade-amazonica">link 1</a><br>
-      <br>
-      <a href="https://pt.wikipedia.org/wiki/Amaz%C3%B4nia">link 2</a>
-    </p> 
-  </li>
-    </ul>
-  </div>
-
-  <div class="botao-menu">
-    <button class="botaomenu" onclick="abrirMenu()"> MENU > </button>
-  </div>
-<script src="script.js"></script>
+      <p id="resultado2"></p>
+      <p id="resultado3"></p>
+    </div>
+   
 
 </body>
 </html>
