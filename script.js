@@ -38,3 +38,13 @@ function calculartemperaturak(){
    const calculo = celsius + 273.15;
    resultado3.textContent = `${calculo.toFixed(2)}°K kelvin`
 }
+function calculartemperaturakprac(){
+   const Kelvin =
+   parseFloat(document.getElementById("Kelvin").value);
+
+   const resultado4 =
+   document.getElementById("resultado4");
+
+   const calculo = Kelvin - 273.15 ;
+   resultado4.textContent = `${calculo.toFixed(2)} celsius (°C)`
+}
