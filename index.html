@@ -9,9 +9,7 @@
 </head>
 <body>
 
-   
-
-    <div id="calculadora">
+  <div id="calculadora">
 
    <h1>calcular média de consumo de combustivel</h1>
 
@@ -25,34 +23,37 @@
 
     <p id="resultado"></p>
 
-    </div>
+  </div>
  
-    
-
-    <div id="calculadora2">
+  <div id="calculadora2">
 
     <h1>calcular temperatura</h1>
 
     <label for="celsius">temperatura em celsius (°C):</label>  
     <input type="number" id="celsius">
 
-    
     <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
 
     <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
     
-      <p id="resultado2"></p>
-      <p id="resultado3"></p>
+    <p id="resultado2"></p>
 
     <label for="Kelvin">temperatura em Kelvin (K)</label>
     <input type="number" id="Kelvin">
 
     <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
+    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
 
+    <p id="resultado3"></p>
+
+    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
+    <input type="number" id="fahrenheit">
+
+    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
+    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
 
     <p id="resultado4"></p>
-    </div>
-   
+  </div>
 
 </body>
 </html>

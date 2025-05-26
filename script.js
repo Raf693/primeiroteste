@@ -1,50 +1,90 @@
-function calcularconsumo(){
-    const distancia = 
-    parseFloat(document.getElementById("distancia").value);
+function calcularconsumo() {
+  const distancia = parseFloat(document.getElementById("distancia").value);
+  const combustivel = parseFloat(document.getElementById("combustivel").value);
+  const resultado = document.getElementById("resultado");
 
-    const combustivel=
-    parseFloat(document.getElementById("combustivel").value);
-
-    const resultado =
-    document.getElementById("resultado");
-
-    if(isNaN(distancia) || isNaN(combustivel) ||
- combustivel=== 0 ) { 
-    resultado.textContent= "por favor, insira valores válidos";
+  if (isNaN(distancia) || isNaN(combustivel) || combustivel === 0) {
+    resultado.textContent = "Por favor, insira valores válidos.";
     return;
- }
-    const media = distancia / combustivel;
-    resultado.textContent = `média de consumo: ${media.toFixed(2)} km/l`;
+  }
 
- }
-
- function calculartemperaturaF(){
-   const celsius = 
-   parseFloat(document.getElementById("celsius").value);
-
-   const resultado2 =
-   document.getElementById("resultado2");
-
-   const calculo = celsius * 1.8 + 32;
-   resultado2.textContent = `${calculo.toFixed(2)}°F fahrenheit`
+  const media = distancia / combustivel;
+  resultado.textContent = `Média de consumo: ${media.toFixed(2)} km/l`;
 }
-function calculartemperaturak(){
-   const celsius = 
-   parseFloat(document.getElementById("celsius").value);
 
-   const resultado3 =
-   document.getElementById("resultado3");
+function calculartemperaturaF() {
+  const celsius = parseFloat(document.getElementById("celsius").value);
+  const resultado2 = document.getElementById("resultado2");
 
-   const calculo = celsius + 273.15;
-   resultado3.textContent = `${calculo.toFixed(2)}°K kelvin`
+  if (isNaN(celsius)) {
+    resultado2.textContent = "Digite uma temperatura válida em °C.";
+    return;
+  }
+
+  const calculo = celsius * 1.8 + 32;
+  resultado2.textContent = `${calculo.toFixed(2)} °F (Fahrenheit)`;
 }
-function calculartemperaturakprac(){
-   const Kelvin =
-   parseFloat(document.getElementById("Kelvin").value);
 
-   const resultado4 =
-   document.getElementById("resultado4");
+function calculartemperaturak() {
+  const celsius = parseFloat(document.getElementById("celsius").value);
+  const resultado2 = document.getElementById("resultado2");
 
-   const calculo = Kelvin - 273.15 ;
-   resultado4.textContent = `${calculo.toFixed(2)} celsius (°C)`
+  if (isNaN(celsius)) {
+    resultado2.textContent = "Digite uma temperatura válida em °C.";
+    return;
+  }
+
+  const calculo = celsius + 273.15;
+  resultado2.textContent = `${calculo.toFixed(2)} K (Kelvin)`;
+}
+
+function calculartemperaturakprac() {
+  const kelvin = parseFloat(document.getElementById("Kelvin").value);
+  const resultado3 = document.getElementById("resultado3");
+
+  if (isNaN(kelvin)) {
+    resultado3.textContent = "Digite uma temperatura válida em Kelvin.";
+    return;
+  }
+
+  const calculo = kelvin - 273.15;
+  resultado3.textContent = `${calculo.toFixed(2)} °C (Celsius)`;
+}
+
+function calculartemperaturakpraf() {
+  const kelvin = parseFloat(document.getElementById("Kelvin").value);
+  const resultado3 = document.getElementById("resultado3");
+
+  if (isNaN(kelvin)) {
+    resultado3.textContent = "Digite uma temperatura válida em Kelvin.";
+    return;
+  }
+
+  const calculo = (kelvin - 273.15) * 9 / 5 + 32;
+  resultado3.textContent = `${calculo.toFixed(2)} °F (Fahrenheit)`;
+}
+
+function calculartemperaturafparac(){
+   const fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+   const resultado4 = document.getElementById("resultado4");
+
+   if (isNaN(fahrenheit)){
+      resultado4.textContent= "digite uma temperatura válida em fahrenheit";
+      return;
+   }
+
+   const calculo= (fahrenheit - 32)* 5 /9;
+   resultado4.textContent=`${calculo.toFixed(2)}°C celsius`
+}
+function calculartemperaturafparak() {
+  const fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+  const resultado4 = document.getElementById("resultado4");
+
+  if (isNaN(fahrenheit)) {
+    resultado4.textContent = "Digite uma temperatura válida em °F.";
+    return;
+  }
+
+  const kelvin = (fahrenheit - 32) * 5 / 9 + 273.15;
+  resultado4.textContent =`${kelvin.toFixed(2)} K (Kelvin)`;
 }
