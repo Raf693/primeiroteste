@@ -69,7 +69,7 @@ function calculartemperaturafparac(){
    const resultado4 = document.getElementById("resultado4");
 
    if (isNaN(fahrenheit)){
-      resultado4.textContent= "digite uma temperatura válida em fahrenheit";
+      resultado4.textContent= "Digite uma temperatura válida em °F.";
       return;
    }
 
@@ -87,4 +87,18 @@ function calculartemperaturafparak() {
 
   const kelvin = (fahrenheit - 32) * 5 / 9 + 273.15;
   resultado4.textContent =`${kelvin.toFixed(2)} K (Kelvin)`;
+}
+
+function calcularraiz(){
+   const raiz = parseFloat(document.getElementById("raiz").value);
+   const resultadoraiz = document.getElementById("resultadoraiz");
+
+   if(isNaN(raiz) || raiz < 0 ){
+    resultadoraiz.textContent = "por favor digite um nùmero válido e não-negativo";
+    return;
+   }
+
+   const resultado = Math.sqrt(raiz);
+   resultadoraiz.textContent =`a raiz quadrada de ${raiz.toFixed(2)} é ${resultado.toFixed(2)}`
+
 }

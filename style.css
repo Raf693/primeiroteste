@@ -101,3 +101,21 @@ button:hover {
   margin-top: 15px;
   font-weight: bold;
 }
+
+#raiz2{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  display: block;
+  margin-bottom: 60px;
+}
+
+#resultadoraiz {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
