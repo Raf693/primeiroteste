@@ -17,9 +17,6 @@ body {
   overflow-y: auto;
 
 }
-.logo{
-  width: 100%;
-}
 
 #calculadora{
   background-color: #fff;
@@ -29,9 +26,7 @@ body {
   max-width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   gap: 15px;
-  display: block;
-  margin-top: -100px;
-  
+  margin: 40px;
 }
 
 h1 {
