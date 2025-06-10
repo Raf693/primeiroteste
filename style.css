@@ -14,18 +14,70 @@ body {
   align-items: center;
   height: auto;
   flex-direction:  column;
-  overflow-y: auto;
+}
 
+.butoes{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  width: 100%;
+  background-color: #007bff;
+  margin-bottom: 30%;
+  align-items: center;
+  height: 150px;
+  background: linear-gradient(to top,transparent 0%, #0056b3 100%,transparent);
+
+
+  & button{
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+  }
+  && img{
+  width: auto;
+  height: 100px;
+  padding: 10px;
+  border-radius: 15px;
+}
+}
+#inicio{
+
+  margin-top: 170px;
+  text-align: center;
+  padding: 50px;
+  line-height: 1.5;
+  background-color: darkgrey;
+  max-width: 90%;
+  border-radius: 15px;
+  
+  & #formula{
+    text-align: justify;
+  }
+
+  && h2{
+    margin: 20px;
+    text-align: center;
+  }
+  & ul{
+    margin: 15px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 50px;
+    word-wrap: break-word;
+    text-align: center;
+    list-style: none;
+  }
 }
 
 #calculadora{
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  gap: 15px;
+  width: 75%;
+  box-shadow: 0 0 10px rgba(0, 0, 0,0.3);
   margin: 40px;
 }
 
@@ -73,9 +125,8 @@ button:hover {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   gap: 15px;
   display: block;
   margin: 40px;
@@ -104,11 +155,8 @@ button:hover {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  gap: 15px;
-  display: block;
+  width: 75%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 40px;
   min-width: 20px;
 }
