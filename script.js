@@ -1,3 +1,15 @@
+window.addEventListener("DOMContentLoaded", function () {
+  let indiceAtual = 0;
+  const cards = document.querySelectorAll(".cardzinho");
+  const botao = document.getElementById("proximoCard");
+
+  botao.addEventListener("click", function () {
+    cards[indiceAtual].classList.remove("active");
+    indiceAtual = (indiceAtual + 1) % cards.length;
+    cards[indiceAtual].classList.add("active");
+  });
+});
+
 function calculadoras() {
   const secao =
   document.getElementById("calculadoras");
@@ -111,4 +123,14 @@ function calcularraiz(){
    const resultado = Math.sqrt(raiz);
    resultadoraiz.textContent =`a raiz quadrada de ${raiz.toFixed(2)} é ${resultado.toFixed(2)}`
 
+}
+
+function calcularporcentagem(){
+    const porcentagem= parseFloat(document.getElementById("porcentagem").value);
+    const valor= parseFloat(document.getElementById("valor").value);
+    const resultado5= document.getElementById("resultado5")
+
+    const calculo = (porcentagem * valor) / 100 ;
+    resultado5.textContent =`${porcentagem.toFixed(2)}% de ${valor.toFixed(2)} é igual a ${calculo.toFixed(2)}`
+    
 }

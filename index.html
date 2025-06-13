@@ -79,6 +79,14 @@ C=20°C <br>
 </div>
  </section>
 
+<div class="meus-cards">
+  <div class="cardzinho active">Card 1: Bem-vindo!</div>
+  <div class="cardzinho">Card 2: Aprenda a programar</div>
+  <div class="cardzinho">Card 3: Conclua seus projetos</div>
+</div>
+
+<button id="proximoCard" class="botao-card">Próximo Card</button>
+
  <section id="calculadoras">
 
   <div id="calculadora">
@@ -138,6 +146,21 @@ C=20°C <br>
     <button onclick="calcularraiz()">calcular</button>
 
     <p id="resultadoraiz"></p>
+  </div>
+
+  <div id="calculoporcentagem">
+
+    <h1>calcular porcentagem</h1>
+       
+    <label for="porcentagem">porcentagem ( % )</label>
+    <input type="number" id="porcentagem"> 
+
+    <label for="valor">valor (R$)</label>
+    <input type="number" id="valor">
+
+    <button onclick="calcularporcentagem()">calcular</button>
+    
+    <p id="resultado5"></p>
   </div>
 </section>
 </body>
