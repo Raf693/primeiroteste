@@ -3,102 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>calcular média</title>
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+         }
+
+        .letreiro-container{
+            width: 100%;
+            overflow: hidden;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .letreiro{
+            display: inline-block;
+            white-space: nowrap;
+            animation: rolar 15s linear infinite;
+        }
+
+        @keyframes rolar {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .letreiro span{
+            margin: 0 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+   </style>
+   <script>
+  window.onload = function () {
+    let nome = prompt("Qual é o seu nome?");
+    if (nome) {
+      document.getElementById("resultado1").innerText = "Olá, " + nome + "!";
+      document.getElementById("resultado2").innerText = "Olá, " + nome + "!";
+    }
+  };
+</script>
+   </script>
 </head>
 <body>
-<div class="butoes">
-     <img src="ChatGPT Image 1 de jun. de 2025, 00_55_17.png" alt="logo">
-     <a href="1.html"><button>início</button></a>
-     <button onclick="calculadoras()">calculadoras</button>
-</div>
-
-<div class="meus-cards">
-  <div class="cardzinho active">
-    <div id="calculadora2">
-
-    <h1>calcular temperatura</h1>
-
-    <label for="celsius">temperatura em celsius (°C):</label>  
-    <input type="number" id="celsius">
-
-    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
-
-    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
     
-    <p id="resultado2"></p>
-
-    <label for="Kelvin">temperatura em Kelvin (K)</label>
-    <input type="number" id="Kelvin">
-
-    <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
-    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
-
-    <p id="resultado3"></p> 
-    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
-    <input type="number" id="fahrenheit">
-
-    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
-    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
-
-    <p id="resultado4"></p>
-
+  <div class="letreiro-container">
+    <div class="letreiro">
+        <span id="resultado1"></span>
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+        <span id="resultado2"></span>
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+    </div>
   </div>
-  </div>
-  <div class="cardzinho">
-   <div id="calculadora">
-
-   <h1>calcular média de consumo de combustivel</h1>
-
-   <label for="distancia">distância percorrida (km):</label>
-   <input type="number" id="distancia" step="1"><br><br>
-
-   <label for="combustivel">combustivel consumido (litros):</label>
-   <input type="number" id="combustivel" step="1"><br><br>
-
-   <button onclick="calcularconsumo()">calcular </button>
-
-    <p id="resultado"></p>
-
-  </div>
-  </div>
-  <div class="cardzinho">
-  
-    <section id="calculadoras">
-   
-  <div id="raiz2">
-
-    <h1>raiz quadrada</h1>
- 
-    <label for="raiz">digite um número</label>
-    <input type="number" id="raiz">
-
-    <button onclick="calcularraiz()">calcular</button>
-
-    <p id="resultadoraiz"></p>
-  </div>
-
-</div>
-<div class="cardzinho">
-<div id="calculoporcentagem">
-
-    <h1>calcular porcentagem</h1>
-       
-    <label for="porcentagem">porcentagem ( % )</label>
-    <input type="number" id="porcentagem"> 
-
-    <label for="valor">valor (R$)</label>
-    <input type="number" id="valor">
-
-    <button onclick="calcularporcentagem()">calcular</button>
-    
-    <p id="resultado5"></p>
-  </div>
-</div>
-</div>
-
-<button id="proximoCard" class="botao-card">Próximo Card</button>
-
+  <a href="calculadoras.html"><button>calculadoras</button></a>
 </body>
 </html>
