@@ -10,102 +10,13 @@
 <body>
 <div class="butoes">
      <img src="ChatGPT Image 1 de jun. de 2025, 00_55_17.png" alt="logo">
-     <button onclick="inicio()">início</button>
+     <a href="1.html"><button>início</button></a>
      <button onclick="calculadoras()">calculadoras</button>
 </div>
-   <section id="inicio">
-  <h1>Conversão de Temperaturas: Kelvin, Fahrenheit e Celsius</h1>
-
-<p>Para converter temperaturas entre Kelvin (K), Fahrenheit (F) e Celsius 
-  (C), utilizamos fórmulas específicas que relacionam essas três escalas. 
-  É importante lembrar que cada escala possui um ponto de referência diferente,
-  como o ponto de congelamento e ebulição da água.</p>
-
-   <h2>Fórmulas de Conversão</h2>
-<div id="formula">
-<p>Aqui estão as principais fórmulas para converter entre as escalas:<br>
-Celsius (C) para Fahrenheit (F):
-F=(C×1.8)+32<br>
-Para converter Celsius para Fahrenheit, multiplicamos a temperatura em 
-Celsius por 1.8 e adicionamos 32.
-<br>
-Fahrenheit (F) para Celsius (C):
-C=(F−32)/1.8 <br>
-Para converter Fahrenheit para Celsius, subtraímos 32 da temperatura em 
-Fahrenheit e dividimos o resultado por 1.8.
-<br>
-Celsius (C) para Kelvin (K):
-K=C+273.15 <br>
-Para converter Celsius para Kelvin, simplesmente adicionamos 273.15 à 
-temperatura em Celsius. Note que 0 Kelvin (zero absoluto) é o ponto onde 
-não há mais energia térmica.
-<br>
-Kelvin (K) para Celsius (C):
-C=K−273.15 <br>
-Para converter Kelvin para Celsius, subtraímos 273.15 da temperatura em Kelvin.
-<br>
-Fahrenheit (F) para Kelvin (K):
-K=(F−32)/1.8+273.15 <br>
-Para converter Fahrenheit para Kelvin, primeiro convertemos Fahrenheit para 
-Celsius e depois convertemos o resultado para Kelvin.
-<br>
-Kelvin (K) para Fahrenheit (F):
-F=(K−273.15)×1.8+32 <br>
-Para converter Kelvin para Fahrenheit, primeiro convertemos Kelvin para Celsius e 
-depois convertemos o resultado para Fahrenheit.</p>
-
-   <h2>Exemplos</h2>
-   <P>Vamos ver alguns exemplos para entender melhor: <br>
-
-Converter 25°C para Fahrenheit: <br>
-F=(25×1.8)+32 <br>
-F=45+32 <br>
-F=77°F  <br>
-
-Converter 298.15 K para Celsius: <br>
-C=298.15−273.15 <br>
-C=25°C <br>
-
-Converter 68°F para Celsius: <br>
-C=(68−32)/1.8 <br>
-C=36/1.8 <br>
-C=20°C <br>
-</P>
-<ul>referencias bibioglaficas
-  <li>
-    <a href="https://g.co/gemini/share/5153a557d90c">https://g.co/gemini/share/5153a557d90c</a>
-  </li>
-</ul>
-</div>
- </section>
 
 <div class="meus-cards">
-  <div class="cardzinho active">Card 1: Bem-vindo!</div>
-  <div class="cardzinho">Card 2: Aprenda a programar</div>
-  <div class="cardzinho">Card 3: Conclua seus projetos</div>
-</div>
-
-<button id="proximoCard" class="botao-card">Próximo Card</button>
-
- <section id="calculadoras">
-
-  <div id="calculadora">
-
-   <h1>calcular média de consumo de combustivel</h1>
-
-   <label for="distancia">distância percorrida (km):</label>
-   <input type="number" id="distancia" step="1"><br><br>
-
-   <label for="combustivel">combustivel consumido (litros):</label>
-   <input type="number" id="combustivel" step="1"><br><br>
-
-   <button onclick="calcularconsumo()">calcular </button>
-
-    <p id="resultado"></p>
-
-  </div>
- 
-  <div id="calculadora2">
+  <div class="cardzinho active">
+    <div id="calculadora2">
 
     <h1>calcular temperatura</h1>
 
@@ -124,18 +35,38 @@ C=20°C <br>
     <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
     <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
 
-    <p id="resultado3"></p>
-
+    <p id="resultado3"></p> 
     <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
     <input type="number" id="fahrenheit">
 
     <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
     <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
 
-
     <p id="resultado4"></p>
-  </div>
 
+  </div>
+  </div>
+  <div class="cardzinho">
+   <div id="calculadora">
+
+   <h1>calcular média de consumo de combustivel</h1>
+
+   <label for="distancia">distância percorrida (km):</label>
+   <input type="number" id="distancia" step="1"><br><br>
+
+   <label for="combustivel">combustivel consumido (litros):</label>
+   <input type="number" id="combustivel" step="1"><br><br>
+
+   <button onclick="calcularconsumo()">calcular </button>
+
+    <p id="resultado"></p>
+
+  </div>
+  </div>
+  <div class="cardzinho">
+  
+    <section id="calculadoras">
+   
   <div id="raiz2">
 
     <h1>raiz quadrada</h1>
@@ -148,7 +79,9 @@ C=20°C <br>
     <p id="resultadoraiz"></p>
   </div>
 
-  <div id="calculoporcentagem">
+</div>
+<div class="cardzinho">
+<div id="calculoporcentagem">
 
     <h1>calcular porcentagem</h1>
        
@@ -162,6 +95,10 @@ C=20°C <br>
     
     <p id="resultado5"></p>
   </div>
-</section>
+</div>
+</div>
+
+<button id="proximoCard" class="botao-card">Próximo Card</button>
+
 </body>
 </html>

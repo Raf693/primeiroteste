@@ -10,16 +10,6 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function calculadoras() {
-  const secao =
-  document.getElementById("calculadoras");
-  secao.scrollIntoView({behavior: "smooth"});
-}
-function inicio(){
-  const secao =
-  document.getElementById("inicio");
-  secao.scrollIntoView({behavior:"smooth"});
-}
 function calcularconsumo() {
   const distancia = parseFloat(document.getElementById("distancia").value);
   const combustivel = parseFloat(document.getElementById("combustivel").value);
