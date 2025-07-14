@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+         }
+
+        .letreiro-container{
+            width: 100%;
+            overflow: hidden;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .letreiro{
+            display: inline-block;
+            white-space: nowrap;
+            animation: rolar 15s linear infinite;
+        }
+
+        @keyframes rolar {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .letreiro span{
+            margin: 0 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+   </style>
+   <script>
+  window.onload = function () {
+    let nome = prompt("Qual é o seu nome?");
+    if (nome) {
+      document.getElementById("resultado1").innerText = "Olá, " + nome + "!";
+      document.getElementById("resultado2").innerText = "Olá, " + nome + "!";
+    }
+  };
+</script>
+   </script>
+</head>
+<body>
+    
+  <div class="letreiro-container">
+    <div class="letreiro">
+        <span id="resultado1"></span>
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+        <span id="resultado2"></span>
+        <span>seja bem vindo</span>
+        <span>tenha um ótimo aprendizado</span>
+        <span>bons estudos</span>
+    </div>
+  </div>
+  <a href="calculadoras.html"><button>calculadoras</button></a>
+</body>
+</html>
