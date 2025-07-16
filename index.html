@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
          body{
             margin: 0;
+            background-color: rgb(255, 255, 255);
+         }
+         h1{
+          font-family: "bebas neue", sans-serif;
+          letter-spacing: 2px;
          }
 
         .letreiro-container{
             width: 100%;
             overflow: hidden;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #0a9396;
+            color: azure;
             padding: 10px 0;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
         }
 
         .letreiro{
@@ -36,21 +51,79 @@
             margin: 0 50px;
             font-size: 1.2rem;
             font-weight: bold;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 2px;
+            
         }
+
+        a button{
+          background-color: #0a9396;
+          padding: 10px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-self: center;
+          font-size: large;
+          margin: 30px;
+          
+        }
+
+        a button:hover{
+          box-shadow: 0 0 10px #0a9396;
+        }
+        img{
+          width: 80px;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+        .texto1{
+          margin-left: 20px;
+          padding: 10px;
+          overflow: hidden;
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+          margin-top: 20px;
+          height: auto;
+          flex: 1;
+      
+        }
+       .imagem{
+        display: flex;
+        background-color: #c7e5e3;
+        margin: 25px;
+        border-radius: 15px;
+  
+       }
+       .imagem img{
+        object-fit: cover;
+       }
+       .temperatura{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqg8ajUNR4n82tDl-3Yto_QQWPjbGVAff-fw&s);
+        padding: 35px;
+        font-size: medium;
+       }
+       .temperatura h1{
+        margin: 10px;
+       }
+       .temperatura .p2{
+          font-weight: bold;
+       }
+       .fundotexto-t{
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+       }
    </style>
-   <script>
-  window.onload = function () {
-    let nome = prompt("Qual é o seu nome?");
-    if (nome) {
-      document.getElementById("resultado1").innerText = "Olá, " + nome + "!";
-      document.getElementById("resultado2").innerText = "Olá, " + nome + "!";
-    }
-  };
-</script>
-   </script>
+  
 </head>
 <body>
-    
   <div class="letreiro-container">
     <div class="letreiro">
         <span id="resultado1"></span>
@@ -63,6 +136,39 @@
         <span>bons estudos</span>
     </div>
   </div>
-  <a href="calculadoras.html"><button>calculadoras</button></a>
+
+<div class="imagem">
+  <div class="texto1">
+    <div></div>
+     <h1> O Que é Matemática?</h1><p>
+No seu cerne, a matemática lida com padrões e estruturas. Ela busca identificar, classificar 
+e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedutivo como suas principais ferramentas. A matemática nos permite quantificar, medir e modelar fenômenos,
+ desde os mais simples cálculos do dia a dia até as complexas teorias que descrevem o universo.
+    </p>
+ </div>
+      <img src="Captura de tela de 2025-07-15 22-08-37.png" alt="calculadora">
+ </div>
+ <div class="temperatura">
+  <div class="fundotexto-t">
+  <h1>porque saber converter temperaturas?</h1>
+   <p>Saber converter temperaturas é mais útil no dia a dia do que parece, especialmente em um mundo cada vez mais conectado. 
+    Embora no Brasil usemos principalmente a escala Celsius (°C), outras escalas como Fahrenheit (°F) e Kelvin (K) são comuns 
+    em diferentes contextos e países.
+</p><br>
+  <p class="p2">Aqui estão algumas razões e exemplos práticos que mostram a importância de saber converter temperaturas:</p><br>
+  <p class="3">Mecânica e eletrônica <br>Profissões específicas <br>Culinária <br>Ciência e tecnologia <br> Uso diário em diferentes países</p>
+  </div>
+ </div>
+  <a href="calculadoras.html"><button><img src="ChatGPT Image 15 de jul. de 2025, 00_04_14.png" alt="">calculadoras</button></a>
+
+ <script>
+  window.onload = function () {
+    let nome = prompt("Qual é o seu nome?");
+    if (nome) {
+      document.getElementById("resultado1").innerText = "Olá, " + nome + "!";
+      document.getElementById("resultado2").innerText = "Olá, " + nome + "!";
+    }
+  };
+</script>
 </body>
 </html>
