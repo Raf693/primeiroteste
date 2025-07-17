@@ -90,15 +90,15 @@ h2 {
 
 .botao-card {
   margin: 0 auto 40px auto;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   border: none;
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  width: 25%;
+  width: 35%;
   height: auto;
-  text-align: center;
+  align-items: center;
   
 }
 
