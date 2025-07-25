@@ -84,38 +84,47 @@
         }
         .texto1{
           overflow: hidden;
-          height: auto;
-          flex: 1;
-          padding-right: 20px;
-      
+          padding: 30px;
+          background-color: white;
+          border-radius: 15px;
+          color: #000000;
+          margin: 20px;
+          font-size: medium;
         }
        .imagem{
         display: flex;
         background-color: #c7e5e3;
-        width: 100%;
-        padding: 30px;
-        padding-right: 0%;
-        margin-bottom: 0%;
-        margin-bottom: 0%;
-        padding-bottom: 0%;
-  
+        padding: 20px;
+        justify-items: center;
+        align-items: center;
+        flex-direction: row-reverse;
        }
        .imagem img{
-        overflow: hidden;
-        max-width: 50%;
+        object-fit: cover;
+        width: auto;
+        height: 400px;
+        animation: flutuar 3s ease-in-out infinite;
+        padding: 20px;
+        
        }
 
-       .texto2{
-        background-color: #c7e5e3;
-        padding: 30px;
-        padding-top: 10px;
+       @keyframes flutuar {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-35px);
+        }
+        100%{
+            transform: translateY(0);
+        }
        }
 
        .texto2 h2{
-        margin: 15px;
-        margin-top: 0%;
         font-family: "bebas neue", sans-serif;
+        padding: 30px;
         letter-spacing: 2px;
+        font-size: xx-large;
        }
        .temperatura{
         background-image: url(fundo-temperatura.png);
@@ -140,6 +149,37 @@
         padding: 20px;
         box-shadow: 0 0 15px rgb(0, 0, 0);
        }
+       .texto2 span{
+        font-weight: bold;
+        color: #0a9396;
+       }
+
+       @media  screen and (max-width: 1030px) {
+        .imagem{
+          flex-direction: column;
+          align-items: center;
+         
+        }
+        .imagem img{
+          width: 100%;
+          height: auto;
+          margin-top: 20px;
+        }
+        .texto1, .texto2 h2, .temperatura h1{
+          text-align: center;
+          margin: 10px;
+          justify-items: center;
+        }
+
+        .temperatura h1{
+          font-size: 8vw;
+        }
+
+        .texto2{
+          text-align: start;
+        }
+        
+       }
    </style>
   
 </head>
@@ -159,25 +199,28 @@
 
 <div class="imagem">
   <div class="texto1">
-    <div></div>
      <h1> O Que é Matemática?</h1><p>
 No seu cerne, a matemática lida com padrões e estruturas. Ela busca identificar, classificar 
 e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedutivo como suas principais ferramentas. A matemática nos permite quantificar, medir e modelar fenômenos,
  desde os mais simples cálculos do dia a dia até as complexas teorias que descrevem o universo.
-    </p>
- </div>
-      <img src="Captura de tela de 2025-07-15 22-08-37.png" alt="calculadora">
- </div>
- <div class="texto2">
+    </p> 
+    
+<div class="texto2">
    <h2>Ramos da Matemática</h2>
-     <p>A matemática é um campo vasto, dividido em diversas áreas de estudo: <br><br> Aritmética: O estudo dos números e das operações básicas (adição, subtração, multiplicação, divisão). <br>
-    <br> Álgebra: Lida com símbolos e regras para manipular esses símbolos, permitindo a generalização de problemas e a resolução de equações. <br><br>
-     Geometria: O estudo das formas, tamanhos, posições relativas de figuras e das propriedades do espaço. <br> <br>  Cálculo: Uma área fundamental que explora a mudança e o movimento, 
-     dividindo-se em cálculo diferencial (taxas de variação) e cálculo integral (acumulação de quantidades). <br><br>  Estatística e Probabilidade: Ferramentas para coletar, analisar, 
-     interpretar, apresentar e organizar dados, além de modelar a incerteza. <br><br>Lógica Matemática: Estuda os princípios do raciocínio válido e da inferência. <br><br>
-      Teoria dos Números: Dedicada ao estudo das propriedades dos números inteiros.
+     <p>A matemática é um campo vasto, dividido em diversas áreas de estudo: <br><br> <span>Aritmética:</span> O estudo dos números e das operações básicas (adição, subtração, multiplicação, divisão). <br>
+    <br> <span>Álgebra:</span> Lida com símbolos e regras para manipular esses símbolos, permitindo a generalização de problemas e a resolução de equações. <br><br>
+     <span>Geometria:</span> O estudo das formas, tamanhos, posições relativas de figuras e das propriedades do espaço. <br> <br> <span> Cálculo:</span> Uma área fundamental que explora a mudança e o movimento, 
+     dividindo-se em cálculo diferencial (taxas de variação) e cálculo integral (acumulação de quantidades). <br><br> <span>Estatística e Probabilidade:</span>  Ferramentas para coletar, analisar, 
+     interpretar, apresentar e organizar dados, além de modelar a incerteza. <br><br><span>Lógica Matemática:</span> Estuda os princípios do raciocínio válido e da inferência. <br><br>
+      <span>Teoria dos Números:</span> Dedicada ao estudo das propriedades dos números inteiros.
 </p>
+</div>
  </div>
+
+ 
+      <img src="matematica.png" alt="imagem-matematica">
+ </div>
+
  <div class="temperatura">
   <div class="fundotexto-t">
   <h1>porque saber converter temperaturas?</h1>
