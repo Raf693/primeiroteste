@@ -8,180 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
-    <style>
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-         body{
-            margin: 0;
-            background-color: rgb(255, 255, 255);
-         }
-         h1{
-          font-family: "bebas neue", sans-serif;
-          letter-spacing: 2px;
-         }
-
-        .letreiro-container{
-            width: 100%;
-            overflow: hidden;
-            background-color: #0a9396;
-            color: azure;
-            padding: 10px 0;
-            box-shadow: 0 0 15px rgb(0, 0, 0);
-        }
-
-        .letreiro{
-            display: inline-block;
-            white-space: nowrap;
-            animation: rolar 15s linear infinite;
-        }
-
-        @keyframes rolar {
-            0%{
-                transform: translateX(100%);
-            }
-            100%{
-                transform: translateX(-100%);
-            }
-        }
-
-        .letreiro span{
-            margin: 0 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 2px;
-            
-        }
-
-        a button{
-          background-color: #0a9396;
-          padding: 10px;
-          border-radius: 10px;
-          border: none;
-          cursor: pointer;
-          color: rgb(255, 255, 255);
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-          justify-self: center;
-          font-size: large;
-          margin: 30px;
-          
-        }
-
-        a button:hover{
-          box-shadow: 0 0 10px #0a9396;
-        }
-        img{
-          width: 80px;
-          border-radius: 5px;
-          margin-bottom: 5px;
-        }
-        .texto1{
-          overflow: hidden;
-          padding: 30px;
-          background-color: white;
-          border-radius: 15px;
-          color: #000000;
-          margin: 20px;
-          font-size: medium;
-        }
-       .imagem{
-        display: flex;
-        background-color: #c7e5e3;
-        padding: 20px;
-        justify-items: center;
-        align-items: center;
-        flex-direction: row-reverse;
-       }
-       .imagem img{
-        object-fit: cover;
-        width: auto;
-        height: 400px;
-        animation: flutuar 3s ease-in-out infinite;
-        padding: 20px;
-        
-       }
-
-       @keyframes flutuar {
-        0%{
-            transform: translateY(0px);
-        }
-        50%{
-            transform: translateY(-35px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-       }
-
-       .texto2 h2{
-        font-family: "bebas neue", sans-serif;
-        padding: 30px;
-        letter-spacing: 2px;
-        font-size: xx-large;
-       }
-       .temperatura{
-        background-image: url(fundo-temperatura.png);
-        padding: 35px;
-        font-size: x-large;
-        margin-top: 0%;
-        background-color: #0a9396;
-        color: rgb(0, 0, 0);
-        object-fit: cover;
-        
-       }
-       .temperatura h1{
-        margin: 10px;
-        overflow: hidden;
-       }
-       .temperatura .p2{
-          font-weight: bold;
-       }
-       .fundotexto-t{
-        backdrop-filter: blur( 5px);
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 0 15px rgb(0, 0, 0);
-       }
-       .texto2 span{
-        font-weight: bold;
-        color: #0a9396;
-       }
-
-       @media  screen and (max-width: 1030px) {
-        .imagem{
-          flex-direction: column;
-          align-items: center;
-         
-        }
-        .imagem img{
-          width: 100%;
-          height: auto;
-          margin-top: 20px;
-        }
-        .texto1, .texto2 h2, .temperatura h1{
-          text-align: center;
-          margin: 10px;
-          justify-items: center;
-        }
-
-        .temperatura h1{
-          font-size: 8vw;
-        }
-
-        .texto2{
-          text-align: start;
-        }
-        
-       }
-   </style>
-  
+<link rel="stylesheet" href="pagina1.css">
+<script src="pagina1.js"></script>
 </head>
 <body>
   <div class="letreiro-container">
@@ -216,7 +44,6 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
 </p>
 </div>
  </div>
-
  
       <img src="matematica.png" alt="imagem-matematica">
  </div>
@@ -229,7 +56,7 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
     em diferentes contextos e países.
 </p><br>
   <p class="p2">Aqui estão algumas razões e exemplos práticos que mostram a importância de saber converter temperaturas:</p><br>
-  <p class="3"><h3>Mecânica e eletrônica:</h3>  Motores, baterias e sensores trabalham com limites de temperatura.
+  <p><h3>Mecânica e eletrônica:</h3>  Motores, baterias e sensores trabalham com limites de temperatura.
 
  Algumas especificações vêm em Fahrenheit ou Kelvin.<h3>Profissões específicas:</h3>Cientistas, meteorologistas, engenheiros, 
  técnicos e até programadores que fazem apps de clima precisam lidar com conversões. <h3> Culinária:</h3>  Muitos fornos ou receitas internacionais usam Fahrenheit.
@@ -243,18 +70,52 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
  Se você viaja, assiste vídeos, lê receitas ou notícias de fora, precisa entender essas conversões.
 
 </p>
+  <div class="informacao-video">
+  <p >Agora você pode conferir um vídeo explicando mais detalhadamente sobre o assunto, e também pode seguir o link para assistir à playlist completa.
+   </p> 
+   <ul>
+      <li><a href="https://www.youtube.com/watch?v=nLn5BxL4Cn4&list=PLNfWNKz4iEr_fD8KrnGbyAP822wySVI73" target="_blank" rel="noopener">Playlist de aulas no youtube</a></li>
+   </ul>
   </div>
- </div>
-  <a href="calculadoras.html"><button><img src="ChatGPT Image 15 de jul. de 2025, 00_04_14.png" alt="">calculadoras</button></a>
+  <iframe src="https://www.youtube.com/embed/nLn5BxL4Cn4?si=DPHfHzfGN8bNKr9J" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 
- <script>
-  window.onload = function () {
-    let nome = prompt("Qual é o seu nome?");
-    if (nome) {
-      document.getElementById("resultado1").innerText = "Olá, " + nome + "!";
-      document.getElementById("resultado2").innerText = "Olá, " + nome + "!";
-    }
-  };
-</script>
+    <h1>Conversão de Temperaturas</h1>
+    <p>Para converter temperaturas entre as escalas Celsius, Fahrenheit e Kelvin, usamos as seguintes fórmulas:</p>
+    <ul>
+      <li><strong>Celsius para Fahrenheit:</strong> F = (C × 9/5) + 32</li>
+      <li><strong>Fahrenheit para Celsius:</strong> C = (F - 32) × 5/9</li>
+      <li><strong>Celsius para Kelvin:</strong> K = C + 273,15</li>
+      <li><strong>Kelvin para Celsius:</strong> C = K - 273,15</li>
+      <li><strong>Fahrenheit para Kelvin:</strong> K = (F - 32) × 5/9 + 273,15</li>
+      <li><strong>Kelvin para Fahrenheit:</strong> F = (K - 273,15) × 9/5 + 32</li>
+    </ul>
+    <p class="p2">Vamos praticar com um exemplo simples: Qual é a temperatura de 25°C em Fahrenheit?</p>
+    <p>Usando a fórmula: F = (25 × 9/5) + 32 = 77°F</p>
+
+<div class="quiz">
+   <input type="radio" id="opcao1" name="resposta" onclick="verificarResposta('77')">
+  <label for="opcao1">77°F</label>
+
+  <input type="radio" id="opcao2" name="resposta" onclick="verificarResposta('80')">
+  <label for="opcao2">80°F</label>
+
+  <input type="radio" id="opcao3" name="resposta" onclick="verificarResposta('75')">
+  <label for="opcao3">75°F</label>
+
+  <input type="radio" id="opcao4" name="resposta" onclick="verificarResposta('70')">
+  <label for="opcao4">70°F</label>
+
+  <div class="resposta" id="resultado"></div>
+ </div>
+</div>
+  <a href="calculadoras.html">
+    <button>
+      <img src="ChatGPT Image 15 de jul. de 2025, 00_04_14.png" alt="calculadora">
+      calculadoras
+    </button>
+  </a>
 </body>
-</html>
+</html>    

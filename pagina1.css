@@ -1,0 +1,237 @@
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+         body{
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+         }
+         
+        .letreiro-container{
+            width: 100%;
+            overflow: hidden;
+            background-color: #0a9396;
+            color: azure;
+            padding: 10px 0;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+            font-family: "Bebas Neue", sans-serif;
+            display: flex;
+            position: relative;
+        }
+
+        .letreiro{
+            display: inline-block;
+            white-space: nowrap;
+            animation: rolar 15s linear infinite;
+        }
+
+        @keyframes rolar {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .letreiro span{
+            margin: 0 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 2px;
+            
+        }
+
+        a button{
+          background-color: #0a9396;
+          padding: 10px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-self: center;
+          font-size: large;
+          margin: 30px;
+        
+        }
+
+        a button:hover{
+          box-shadow: 0 0 10px #0a9396;
+        }
+        img{
+          width: 80px;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+        .texto1{
+          overflow: hidden;
+          padding: 30px;
+          background-color: white;
+          border-radius: 15px;
+          color: #000000;
+          margin: 20px;
+          font-size: medium;
+        }
+       .imagem{
+        display: flex;
+        background-color: #c7e5e3;
+        padding: 20px;
+        justify-items: center;
+        align-items: center;
+        flex-direction: row-reverse;
+       }
+       
+       .imagem h1,h2{
+        color: #0a9396;
+        font-family: "bebas neue", sans-serif;
+        letter-spacing: 2px;
+       }
+
+       .imagem img{
+        object-fit: cover;
+        width: auto;
+        height: 400px;
+        animation: flutuar 3s ease-in-out infinite;
+        padding: 20px;
+        
+       }
+      
+       @keyframes flutuar {
+        0%{
+            transform: translatey(0px);
+        }
+        50%{
+            transform: translatey(-35px);
+        }
+        100%{
+            transform: translatey(0);
+        }
+       }
+
+       .texto2 h2{
+        font-family: "bebas neue", sans-serif;
+        padding: 30px;
+        letter-spacing: 2px;
+        font-size: xx-large;
+       }
+       
+       .texto2 span{
+        font-weight: bold;
+        color: #0a9396;
+          }
+
+       .temperatura{
+        background-image: url(fundo-temperatura.png);
+        padding: 35px;
+        font-size: x-large;
+        margin-top: 0%;
+        background-color: #0a9396;
+        color: rgb(0, 0, 0);
+        object-fit: cover;
+       }
+
+       .temperatura h1{
+          font-family: "bebas neue", sans-serif;
+          letter-spacing: 2px;
+         }
+       .temperatura .p2{
+          font-weight: bold;
+       }
+       .fundotexto-t{
+        backdrop-filter: blur( 5px);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+       }
+       
+       .temperatura iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        border-radius: 15px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+        .informacao-video {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #c7e5e3;
+            padding: 10px;
+            border-radius: 15px;
+            width: 100%;
+        }
+        .informacao-video p{
+            font-weight: bold;
+            margin: 10px;
+        }
+        
+        .informacao-video li{
+            list-style-type: none;
+            padding: 0;
+            margin: 10px;
+            
+        }
+
+        .informacao-video ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .quiz{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #c7e5e3;
+          border-radius: 15px;
+          padding: 20px;
+          margin: 20px;
+          
+        }
+   
+        /* video responsivo */
+        @media screen and (max-width: 700px) {
+        .temperatura iframe {
+         height: 40vw;
+         max-width: 100%;
+         min-height: 200px;
+      }
+      }
+       /* Estilos para telas menores */
+       @media  screen and (max-width: 1030px) {
+        .imagem{
+          flex-direction: column;
+          align-items: center;
+         
+        }
+        .imagem img{
+          width: 100%;
+          height: auto;
+          margin-top: 20px;
+        }
+        .texto1, .texto2 h2, .temperatura h1{
+          text-align: center;
+          margin: 10px;
+          justify-items: center;
+        }
+
+        .temperatura h1{
+          font-size: 8vw;
+        }
+
+        .texto2{
+          text-align: start;
+        }
+        
+       }
