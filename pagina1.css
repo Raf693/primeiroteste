@@ -45,6 +45,27 @@
             letter-spacing: 2px;
             
         }
+        
+        .recado{
+          background-color: #e3e648;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          font-family: "Bebas Neue", sans-serif;
+          font-size: 1.2rem;
+          margin-top: 10px;
+          margin: 25px;
+          border-radius: 15px;
+          padding: 10px 20px;
+          border: #ff0303 2px solid;
+          
+        }
+
+        .recado span{
+          font-size: xx-large;
+          color: #ff0303;
+          margin-right: 5px;
+        }
 
         a button{
           background-color: #0a9396;
@@ -187,16 +208,26 @@
             align-items: center;
             justify-content: center;
         }
-        
+        .fórmulas{
+         margin: 20px;
+        }
         .quiz{
-          display: flex;
-          flex-direction: column;
           align-items: center;
           justify-content: center;
           background-color: #c7e5e3;
           border-radius: 15px;
           padding: 20px;
           margin: 20px;
+          
+        }
+        .quiz p{
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        .quiz input{
+          border-radius: 5px;
+          position: relative;
+          margin-bottom: 10px;
           
         }
    
