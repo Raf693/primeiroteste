@@ -14,23 +14,28 @@
 <body>
   <div class="letreiro-container">
     <div class="letreiro">
-        <span id="resultado1"></span>
         <span>seja bem vindo</span>
         <span>tenha um ótimo aprendizado</span>
         <span>bons estudos</span>
-        <span id="resultado2"></span>
         <span>seja bem vindo</span>
         <span>tenha um ótimo aprendizado</span>
         <span>bons estudos</span>
     </div>
   </div>
-<div class="nome">
-  <label for="name">digite seu nome (opcional)</label>
-  <input type="text" id="name" placeholder="seu nome aqui" oninput="atualizarLetreiro()">
-</div>
+    <div class="titulo">
+      <h1>Matemática</h1>
+      <h2>Aprenda a converter temperaturas e muito mais!</h2>
+    
    <div class="recado">
     <span>!</span> este site é apenas um projeto de estudo, não é um site oficial, não tem fins lucrativos, e não tem relação com nenhuma instituição de ensino. !
    </div>
+   
+   <div class="nome">
+  <label for="name">digite seu nome (opcional)</label>
+  <input type="text" id="name" placeholder="seu nome aqui" oninput="atualizarLetreiro()">
+  </div>
+
+  </div>
 <div class="imagem">
   <div class="texto1">
      <h1> O Que é Matemática?</h1><p>
@@ -125,12 +130,81 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
 
   </div>     
   </div>
+<div class="calculos">
 
-  <a href="calculadoras.html">
-    <button>
-      <img src="ChatGPT Image 15 de jul. de 2025, 00_04_14.png" alt="calculadora">
-      calculadoras
-    </button>
-  </a>
+  <div class="calculadora2" id="calculadora2">
+
+    <h1>calcular temperatura</h1>
+
+    <label for="celsius">temperatura em celsius (°C):</label>  
+    <input type="number" id="celsius">
+
+    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
+
+    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
+    
+    <p id="resultado2"></p>
+
+    <label for="Kelvin">temperatura em Kelvin (K)</label>
+    <input type="number" id="Kelvin">
+
+    <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
+    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
+
+    <p id="resultado3"></p> 
+    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
+    <input type="number" id="fahrenheit">
+
+    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
+    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
+
+    <p id="resultado4"></p>
+
+  </div>
+
+  <div id="calculadora" class="calculadora">
+
+   <h1>calcular média de consumo de combustivel</h1>
+
+   <label for="distancia">distância percorrida (km):</label>
+   <input type="number" id="distancia" step="1"><br><br>
+
+   <label for="combustivel">combustivel consumido (litros):</label>
+   <input type="number" id="combustivel" step="1"><br><br>
+
+   <button onclick="calcularconsumo()">calcular </button>
+
+    <p id="resultadoconsumo"></p>
+
+  </div>
+    
+   <div id="raiz2" class="raiz2">
+
+    <h1>raiz quadrada</h1>
+ 
+    <label for="raiz">digite um número</label>
+    <input type="number" id="raiz">
+
+    <button onclick="calcularraiz()">calcular</button>
+
+    <p id="resultadoraiz"></p>
+  </div>
+
+  <div id="calculoporcentagem" class="calculoporcentagem">
+
+    <h1>calcular porcentagem</h1>
+       
+    <label for="porcentagem">porcentagem ( % )</label>
+    <input type="number" id="porcentagem"> 
+
+    <label for="valor">valor (R$)</label>
+    <input type="number" id="valor">
+
+    <button onclick="calcularporcentagem()">calcular</button>
+    
+    <p id="resultado5"></p>
+  </div>
+
+</div>
 </body>
 </html>    

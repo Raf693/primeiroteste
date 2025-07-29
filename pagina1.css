@@ -45,6 +45,12 @@
             letter-spacing: 2px;
             
         }
+        .titulo{
+          text-align: center;
+          background-color: #ffffff;
+          margin: 0%;
+          padding: 20px;
+        }
         .nome{
           display: flex;
           max-width: 30%;
@@ -99,13 +105,13 @@
         }
         .texto1{
           overflow: hidden;
-          padding: 30px;
+          padding: 15px;
           background-color: white;
           border-radius: 15px;
           color: #000000;
-          margin: 20px;
           font-size: medium;
           border: #0a9396 2px solid;
+          margin: 20px;
         }
        .imagem{
         display: flex;
@@ -114,6 +120,7 @@
         justify-items: center;
         align-items: center;
         flex-direction: row-reverse;
+        border-top: 10px solid #0a9396;
        }
        
        .imagem h1,h2{
@@ -180,16 +187,6 @@
         box-shadow: 0 0 15px rgb(0, 0, 0);
        }
        
-       .temperatura iframe {
-        width: 100%;
-        max-width: 600px;
-        height: 400px;
-        border-radius: 15px;
-        margin-top: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-     }
         .informacao-video {
             text-align: center;
             margin-top: 20px;
@@ -238,6 +235,17 @@
           margin-bottom: 10px;
           
         }
+
+        .temperatura iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        border-radius: 15px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
    
         /* video responsivo */
         @media screen and (max-width: 700px) {
@@ -247,6 +255,219 @@
          min-height: 200px;
       }
       }
+.calculos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+.calculos > div {
+  width: calc(50% - 20px);
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .calculos > div {
+    width: 100%;
+    min-width: unset;
+  }
+}
+.calculadora2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;
+  background-color: #ffffff;
+}
+.calculadora2 input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+.calculadora2 label{
+  text-align: start;
+  display: block;
+  margin-bottom: 5px;
+}
+.calculadora2 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.calculadora2 button:hover {
+  background-color: #94d2bd;
+}
+.calculadora2 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0a9396;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.calculadora{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;
+}
+.calculadora input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+.calculadora label{
+  text-align: start;
+  display: block;
+  margin-bottom: 5px;
+}
+.calculadora button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.calculadora button:hover {
+  background-color: #94d2bd;
+}
+.calculadora h1, .raiz2 h1 , .calculoporcentagem h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0a9396;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.raiz2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;
+}
+
+.raiz2 input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.raiz2 label{
+  text-align: start;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.raiz2 button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.raiz2 button:hover {
+  background-color: #94d2bd;
+}
+
+.calculoporcentagem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 30px;
+  max-width: 600px;
+}
+
+.calculoporcentagem input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.calculoporcentagem label{
+  text-align: start;
+  display: block;
+  margin-bottom: 5px;
+}
+.calculoporcentagem button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.calculoporcentagem button:hover {
+  background-color: #94d2bd;
+}
+#resultadoconsumo ,#resultadoraiz ,#resultado2, #resultado3, #resultado4 ,#resultadoraiz ,#resultado5 {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
        /* Estilos para telas menores */
        @media  screen and (max-width: 1030px) {
 
