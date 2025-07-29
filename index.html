@@ -24,12 +24,14 @@
         <span>bons estudos</span>
     </div>
   </div>
-  
-<div class="imagem">
+<div class="nome">
+  <label for="name">digite seu nome (opcional)</label>
+  <input type="text" id="name" placeholder="seu nome aqui" oninput="atualizarLetreiro()">
+</div>
    <div class="recado">
     <span>!</span> este site é apenas um projeto de estudo, não é um site oficial, não tem fins lucrativos, e não tem relação com nenhuma instituição de ensino. !
    </div>
-
+<div class="imagem">
   <div class="texto1">
      <h1> O Que é Matemática?</h1><p>
 No seu cerne, a matemática lida com padrões e estruturas. Ela busca identificar, classificar 
@@ -106,7 +108,7 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
     <p class="p2">Vamos praticar com um exemplo simples: Qual é a temperatura de 25°C em Fahrenheit?</p>
     <p>Usando a fórmula: F = (25 × 9/5) + 32 = 77°F</p>
 
-
+    <p>escolha a resposta correta abaixo:</p>
    <input type="radio" id="opcao1" name="resposta" onclick="verificarResposta('77')">
   <label for="opcao1">77°F</label>
 

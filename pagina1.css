@@ -5,7 +5,7 @@
       }
          body{
             margin: 0;
-            background-color: rgb(255, 255, 255);
+            background-color: #c7e5e3;
          }
          
         .letreiro-container{
@@ -44,6 +44,12 @@
             font-style: normal;
             letter-spacing: 2px;
             
+        }
+        .nome{
+          display: flex;
+          max-width: 30%;
+          margin: 20px;
+          flex-direction: column;
         }
         
         .recado{
@@ -99,6 +105,7 @@
           color: #000000;
           margin: 20px;
           font-size: medium;
+          border: #0a9396 2px solid;
         }
        .imagem{
         display: flex;
@@ -113,6 +120,7 @@
         color: #0a9396;
         font-family: "bebas neue", sans-serif;
         letter-spacing: 2px;
+        
        }
 
        .imagem img{
@@ -241,6 +249,10 @@
       }
        /* Estilos para telas menores */
        @media  screen and (max-width: 1030px) {
+
+        .nome{
+          max-width: 50%;
+        }
         .imagem{
           flex-direction: column;
           align-items: center;
