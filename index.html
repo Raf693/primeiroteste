@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="pagina1.css">
-<script src="pagina1.js"></script>
+
 </head>
 <body>
+  
   <div class="letreiro-container">
     <div class="letreiro">
         <span>seja bem vindo</span>
@@ -21,47 +21,57 @@
         <span>tenha um ótimo aprendizado</span>
         <span>bons estudos</span>
     </div>
+   
   </div>
+
     <div class="titulo">
-      <h1>Matemática</h1>
-      <h2>Aprenda a converter temperaturas e muito mais!</h2>
-    
+      <h1 >Matemática</h1>
+      <h2 class="h2-padrao">Aprenda a converter temperaturas e muito mais!</h2>
+   
    <div class="recado">
     <span>!</span> este site é apenas um projeto de estudo, não é um site oficial, não tem fins lucrativos, e não tem relação com nenhuma instituição de ensino. !
    </div>
    
+   <div class="tema">
    <div class="nome">
   <label for="name">digite seu nome (opcional)</label>
   <input type="text" id="name" placeholder="seu nome aqui" oninput="atualizarLetreiro()">
-  </div>
+</div> 
 
-  </div>
-<div class="imagem">
-  <div class="texto1">
-     <h1> O Que é Matemática?</h1><p>
+<button class="botaotema" id="botaotema" onclick="mudardesign()">
+  <i class="material-symbols-outlined">colors</i>mudar tema
+</button>
+ 
+
+</div>
+   </div>
+
+<div class="imagem" id="imagem">
+  <div class="texto1" id="texto1">
+     <h1 class="fonte-padrao"> O Que é Matemática?</h1><p>
 No seu cerne, a matemática lida com padrões e estruturas. Ela busca identificar, classificar 
 e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedutivo como suas principais ferramentas. A matemática nos permite quantificar, medir e modelar fenômenos,
  desde os mais simples cálculos do dia a dia até as complexas teorias que descrevem o universo.
     </p> 
     
-<div class="texto2">
-   <h2>Ramos da Matemática</h2>
-     <p>A matemática é um campo vasto, dividido em diversas áreas de estudo: <br><br> <span>Aritmética:</span> O estudo dos números e das operações básicas (adição, subtração, multiplicação, divisão). <br>
-    <br> <span>Álgebra:</span> Lida com símbolos e regras para manipular esses símbolos, permitindo a generalização de problemas e a resolução de equações. <br><br>
-     <span>Geometria:</span> O estudo das formas, tamanhos, posições relativas de figuras e das propriedades do espaço. <br> <br> <span> Cálculo:</span> Uma área fundamental que explora a mudança e o movimento, 
-     dividindo-se em cálculo diferencial (taxas de variação) e cálculo integral (acumulação de quantidades). <br><br> <span>Estatística e Probabilidade:</span>  Ferramentas para coletar, analisar, 
-     interpretar, apresentar e organizar dados, além de modelar a incerteza. <br><br><span>Lógica Matemática:</span> Estuda os princípios do raciocínio válido e da inferência. <br><br>
-      <span>Teoria dos Números:</span> Dedicada ao estudo das propriedades dos números inteiros.
+<div class="texto2" id="texto2">
+   <h2 class="h2-padrao">Ramos da Matemática</h2>
+     <p>A matemática é um campo vasto, dividido em diversas áreas de estudo: <br><br> <span class="destaque-padrao">Aritmética:</span> O estudo dos números e das operações básicas (adição, subtração, multiplicação, divisão). <br>
+    <br> <span class="destaque-padrao">Álgebra:</span> Lida com símbolos e regras para manipular esses símbolos, permitindo a generalização de problemas e a resolução de equações. <br><br>
+     <span class="destaque-padrao">Geometria:</span> O estudo das formas, tamanhos, posições relativas de figuras e das propriedades do espaço. <br> <br> <span class="destaque-padrao"> Cálculo:</span> Uma área fundamental que explora a mudança e o movimento, 
+     dividindo-se em cálculo diferencial (taxas de variação) e cálculo integral (acumulação de quantidades). <br><br> <span class="destaque-padrao">Estatística e Probabilidade:</span>  Ferramentas para coletar, analisar, 
+     interpretar, apresentar e organizar dados, além de modelar a incerteza. <br><br><span class="destaque-padrao">Lógica Matemática:</span> Estuda os princípios do raciocínio válido e da inferência. <br><br>
+      <span class="destaque-padrao">Teoria dos Números:</span> Dedicada ao estudo das propriedades dos números inteiros.
 </p>
 </div>
  </div>
  
-      <img src="matematica.png" alt="imagem-matematica">
+      <img src="imagem-calculadora.png" alt="imagem-matematica">
  </div>
 
  <div class="temperatura">
   <div class="fundotexto-t">
-  <h1>porque saber converter temperaturas?</h1>
+  <h1 class="fonte2-padrao">porque saber converter temperaturas?</h1>
    <p>Saber converter temperaturas é mais útil no dia a dia do que parece, especialmente em um mundo cada vez mais conectado. 
     Embora no Brasil usemos principalmente a escala Celsius (°C), outras escalas como Fahrenheit (°F) e Kelvin (K) são comuns 
     em diferentes contextos e países.
@@ -79,21 +89,56 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
  Estados Unidos usam graus Fahrenheit (°F)
  Cientistas muitas vezes usam Kelvin (K)
  Se você viaja, assiste vídeos, lê receitas ou notícias de fora, precisa entender essas conversões.
-
 </p>
-  <div class="informacao-video">
-  <p >Agora você pode conferir um vídeo explicando mais detalhadamente sobre o assunto, e também pode seguir o link para assistir à playlist completa.
-   </p> 
-   <ul>
-      <li><a href="https://www.youtube.com/watch?v=nLn5BxL4Cn4&list=PLNfWNKz4iEr_fD8KrnGbyAP822wySVI73" target="_blank" rel="noopener">Playlist de aulas no youtube</a></li>
-   </ul>
+
+
+  <div class="calculadora2" id="calculadora2">
+
+    <h1 class="fonte-padrao">calcular temperatura</h1>
+
+    <label for="celsius">temperatura em celsius (°C):</label>  
+    <input type="number" id="celsius">
+
+    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
+
+    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
+    
+    <p id="resultado2"></p>
+
+    <label for="Kelvin">temperatura em Kelvin (K)</label>
+    <input type="number" id="Kelvin">
+
+    <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
+    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
+
+    <p id="resultado3"></p> 
+    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
+    <input type="number" id="fahrenheit">
+
+    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
+    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
+
+    <p id="resultado4"></p>
+
   </div>
+  
   <iframe src="https://www.youtube.com/embed/nLn5BxL4Cn4?si=DPHfHzfGN8bNKr9J" title="YouTube video player" 
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
+ <div class="informacao-video" id="informacao-video">
+   <h1 class="fonte-padrao">Informação Adicional</h1>
+   <p>Para aprofundar seus conhecimentos sobre conversão de temperaturas, 
+   recomendamos assistir a um vídeo explicativo que detalha as fórmulas e exemplos práticos.
+   </p>
+   <p>Abaixo, você encontrará um link para uma playlist completa no YouTube, onde poderá aprender mais sobre o assunto.</p>
 
-    <h1>Conversão de Temperaturas</h1>
+   <ul>
+      <li><a href="https://www.youtube.com/watch?v=nLn5BxL4Cn4&list=PLNfWNKz4iEr_fD8KrnGbyAP822wySVI73" target="_blank" rel="noopener">Playlist de aulas no youtube</a></li>
+   </ul>
+  </div>
+
+    <h1 class="fonte2-padrao">Conversão de Temperaturas</h1>
     <p>Para converter temperaturas entre as escalas Celsius, Fahrenheit e Kelvin, usamos as seguintes fórmulas:</p>
     
     <div class="fórmulas">
@@ -129,42 +174,25 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
   <div class="resposta" id="resultado"></div>
 
   </div>     
-  </div>
-<div class="calculos">
+  
 
-  <div class="calculadora2" id="calculadora2">
+  <div class="consumo" id="consumo">
+  <h1>calcular consumo de combustivel</h1>
+  <p>Calcular o consumo de combustível é essencial para entender a eficiência do veículo e
+  planejar viagens. A fórmula básica é:</p>
+  <p>Consumo (km/l) = Distância percorrida (km) / Combustível consumido (litros)</p>
+  <p>Por exemplo, se você percorreu 300 km e consumiu 20 litros de combustível, o consumo é:<span class="destaque-padrao">= 300 km / 20 l = 15 km/l</span></p>
+  
+  <p>Isso significa que o veículo percorre 15 km para cada litro de combustível consumido. Essa informação é útil para calcular custos de viagem, planejar paradas para abastecimento e avaliar a eficiência do veículo.</p>
+  <p>Além disso, o consumo de combustível pode variar dependendo de fatores como o tipo de estrada, condições climáticas e estilo de condução. Portanto, é importante monitorar regularmente o consumo para otimizar o uso do combustível e reduzir os custos operacionais.</p>
+  <p>Por exemplo, se você planeja uma viagem de 500 km e seu veículo tem um consumo médio de 12 km/l, você pode calcular a quantidade de combustível necessária:</p>
+  <p>Combustível necessário = Distância / Consumo = 500 km / 12 km/l = aproximadamente 41,67 litros</p>
+  <p>Isso significa que você precisará de cerca de 41,67 litros de combustível para completar a viagem de 500 km. Com essas informações, você pode planejar melhor sua viagem, considerando paradas para abastecimento e custos.</p>
 
-    <h1>calcular temperatura</h1>
+  
+ <div id="calculadora" class="calculadora">
 
-    <label for="celsius">temperatura em celsius (°C):</label>  
-    <input type="number" id="celsius">
-
-    <button onclick="calculartemperaturaF()">calcular celsius (°C) para  fahrenheit (°F)</button>
-
-    <button onclick="calculartemperaturak()">calcular celsius (°C) para Kelvin (K)</button>
-    
-    <p id="resultado2"></p>
-
-    <label for="Kelvin">temperatura em Kelvin (K)</label>
-    <input type="number" id="Kelvin">
-
-    <button onclick="calculartemperaturakprac()">calcular Kelvin (K) para celsius (°C)</button>
-    <button onclick="calculartemperaturakpraf()">calcular Kelvin (K) para  fahrenheit (°F)</button>
-
-    <p id="resultado3"></p> 
-    <label for="fahrenheit">temperatura em fahrenheit (°F)</label> 
-    <input type="number" id="fahrenheit">
-
-    <button onclick="calculartemperaturafparac()">calcular fahrenheit °F para celsius °C</button>
-    <button onclick="calculartemperaturafparak()">calcular fahrenheit °F para kelvin K</button>
-
-    <p id="resultado4"></p>
-
-  </div>
-
-  <div id="calculadora" class="calculadora">
-
-   <h1>calcular média de consumo de combustivel</h1>
+   <h1 class="fonte-padrao">calcular média de consumo de combustivel</h1>
 
    <label for="distancia">distância percorrida (km):</label>
    <input type="number" id="distancia" step="1"><br><br>
@@ -175,12 +203,12 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
    <button onclick="calcularconsumo()">calcular </button>
 
     <p id="resultadoconsumo"></p>
-
   </div>
-    
+</div>
+</div>
    <div id="raiz2" class="raiz2">
 
-    <h1>raiz quadrada</h1>
+    <h1 class="fonte-padrao">raiz quadrada</h1>
  
     <label for="raiz">digite um número</label>
     <input type="number" id="raiz">
@@ -192,7 +220,7 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
 
   <div id="calculoporcentagem" class="calculoporcentagem">
 
-    <h1>calcular porcentagem</h1>
+    <h1 class="fonte-padrao">calcular porcentagem</h1>
        
     <label for="porcentagem">porcentagem ( % )</label>
     <input type="number" id="porcentagem"> 
@@ -203,8 +231,8 @@ e explorar essas relações abstratas, utilizando a lógica e o raciocínio dedu
     <button onclick="calcularporcentagem()">calcular</button>
     
     <p id="resultado5"></p>
-  </div>
 
 </div>
 </body>
+<script src="pagina1.js"></script>
 </html>    

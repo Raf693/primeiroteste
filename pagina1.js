@@ -1,3 +1,5 @@
+console.log("JS carregado");
+
 function atualizarLetreiro() {
   const nome = document.getElementById("name").value;
   const letreiro = document.querySelector(".letreiro span");
@@ -20,7 +22,65 @@ function verificarResposta(respostaSelecionada) {
         resultado.style.color = "red";
       }
     }
+ 
 
+function mudardesign() {
+  const design = document.getElementById("imagem");
+  const texto1 = document.getElementById("texto1");
+  const h2s = document.querySelectorAll(".h2-padrao"); 
+  const imagemh1 = document.querySelector(".letreiro-container"); 
+  const botaotema = document.getElementById("botaotema");
+  const destaque = document.querySelectorAll(".destaque-padrao");
+  const fonte = document.querySelectorAll(".fonte-padrao");
+  const fonte2 = document.querySelectorAll(".fonte2-padrao");
+  const temperatura = document.querySelector(".temperatura");
+  const temperaturaT = document.querySelector(".fundotexto-t");
+  const calculadora2 = document.getElementById("calculadora2");
+  const resultados = document.querySelectorAll("#resultadoconsumo ,#resultado2, #resultado3, #resultado4 ,#resultado5");
+  const quis = document.querySelector(".quiz");
+  const consumo = document.getElementById("consumo");
+  const info = document.getElementById("informacao-video");
+  const raiz = document.getElementById("raiz2");
+  const porcentagem = document.getElementById("calculoporcentagem");
+  
+  // Toggle de classes
+  porcentagem.classList.toggle("calculoporcentagem-verde");  
+  raiz.classList.toggle("raiz2-verde");
+  info.classList.toggle("informacao-video-verde");
+  consumo.classList.toggle("consumo-verde");
+  quis.classList.toggle("quiz-verde");
+  calculadora2.classList.toggle("calculadora2-verde");
+  temperaturaT.classList.toggle("temperatura-t-verde");
+  temperatura.classList.toggle("temperatura-verde");
+  botaotema.classList.toggle("botaotema-verde");
+  design.classList.toggle("imagem-verde");
+  texto1.classList.toggle("texto1-verde");
+  imagemh1.classList.toggle("letreiro-container-verde");
+
+  resultados.forEach(el => {
+    el.classList.toggle("resultados-verde");
+  });
+
+  fonte2.forEach(el => {
+    el.classList.toggle("fonte2-verde");
+  });
+
+  fonte.forEach(el => { 
+    el.classList.toggle("fonte-verde");
+  });  
+
+  h2s.forEach(el => {
+    el.classList.toggle("h2-verde");
+  });
+  
+  destaque.forEach(el => {
+    el.classList.toggle("destaque-verde");
+  });
+
+  const body = document.body;
+  
+  body.style.backgroundColor = body.style.backgroundColor === "black" ? "white" : "black";
+}
 function calcularconsumo() {
   const distancia = parseFloat(document.getElementById("distancia").value);
   const combustivel = parseFloat(document.getElementById("combustivel").value);
